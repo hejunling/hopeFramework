@@ -166,7 +166,6 @@ httpRequest-->API
 API-->Controller
 Controller-->Service
 Service-->cache(db)
-
 ```
 ## 应答响应
 
@@ -181,5 +180,3 @@ Service->>Controller: return data!
 Controller->>API: return data!
 API->>httpRequest: return data!
 ```
-
-
