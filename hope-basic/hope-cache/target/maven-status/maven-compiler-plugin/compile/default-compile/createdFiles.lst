@@ -1,0 +1,3 @@
+org\hopeframework\cache\EnableRedisCacheAutoConfiguration.class
+org\hopeframework\cache\EnableRedisCacheAutoConfiguration$RedisConnectionConfiguration.class
+org\hopeframework\cache\EnableRedisCacheAutoConfiguration$1.class

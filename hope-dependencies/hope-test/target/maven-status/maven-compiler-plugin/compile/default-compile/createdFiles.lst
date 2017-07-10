@@ -1,0 +1,7 @@
+org\hopeframework\test\bean\ReqCommon.class
+org\hopeframework\test\bean\RespObject.class
+org\hopeframework\test\bean\RespInfo.class
+org\hopeframework\test\enums\ContentType.class
+org\hopeframework\test\bean\ReqObject.class
+org\hopeframework\test\api\BaseAPI.class
+org\hopeframework\test\api\BaseAPI$1.class

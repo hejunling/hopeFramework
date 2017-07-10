@@ -1,0 +1,512 @@
+{
+  "groups": [
+    {
+      "name": "spring.dubbo",
+      "type": "org.hopeframework.dubbo.config.DubboProperties",
+      "sourceType": "org.hopeframework.dubbo.config.DubboProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.dubbo.scan",
+      "type": "java.lang.String",
+      "description": "dubbo扫描路径.",
+      "sourceType": "org.hopeframework.dubbo.config.DubboProperties"
+    },
+    {
+      "name": "spring.dubbo.application.name",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 应用名称.",
+      "sourceType": "com.alibaba.dubbo.config.ApplicationConfig",
+      "defaultValue": "dubbo - application"
+    },
+    {
+      "name": "spring.dubbo.application.version",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 模块版本.",
+      "sourceType": "com.alibaba.dubbo.config.ApplicationConfig"
+    },
+    {
+      "name": "spring.dubbo.application.owner",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 应用负责人.",
+      "sourceType": "com.alibaba.dubbo.config.ApplicationConfig"
+    },
+    {
+      "name": "spring.dubbo.application.organization",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 组织名(BU或部门).",
+      "sourceType": "com.alibaba.dubbo.config.ApplicationConfig"
+    },
+    {
+      "name": "spring.dubbo.application.architecture",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 分层.",
+      "sourceType": "com.alibaba.dubbo.config.ApplicationConfig"
+    },
+    {
+      "name": "spring.dubbo.application.environment",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 环境，如：dev/test/run.",
+      "sourceType": "com.alibaba.dubbo.config.ApplicationConfig"
+    },
+    {
+      "name": "spring.dubbo.application.compiler",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - Java代码编译器.",
+      "sourceType": "com.alibaba.dubbo.config.ApplicationConfig"
+    },
+    {
+      "name": "spring.dubbo.application.logger",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 日志输出方式.",
+      "sourceType": "com.alibaba.dubbo.config.ApplicationConfig"
+    },
+    {
+      "name": "spring.dubbo.application.logger",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 日志输出方式.",
+      "sourceType": "com.alibaba.dubbo.config.ApplicationConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.address",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心(可以多个) - 注册中心地址.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.username",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心(可以多个) - 注册中心登录用户名.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.password",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心(可以多个) - 注册中心登录密码.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.port",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心(可以多个) - 注册中心缺省端口.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.protocol",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心(可以多个) - 注册中心协议.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.transporter",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心(可以多个) - 客户端实现.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.server",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.client",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.cluster",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.group",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.version",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.timeout",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 注册中心(可以多个) - 注册中心请求超时时间(毫秒).",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.session",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 注册中心(可以多个) - 注册中心会话超时时间(毫秒).",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.file",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心(可以多个) - 动态注册中心列表存储文件.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.wait",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 注册中心(可以多个) - 停止时等候完成通知时间.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.check",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 注册中心(可以多个) - 启动时检查注册中心是否存在.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.dynamic",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 注册中心(可以多个) - 在该注册中心上注册是动态的还是静态的服务.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.register",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 注册中心(可以多个) - 在该注册中心上服务是否暴露.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.subscribe",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 注册中心(可以多个) - 在该注册中心上服务是否引用.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.registries.isDefault",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 注册中心(可以多个) - 是否为缺省.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.application.monitor.protocol",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.MonitorConfig"
+    },
+    {
+      "name": "spring.dubbo.application.monitor.address",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.MonitorConfig"
+    },
+    {
+      "name": "spring.dubbo.application.monitor.username",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.MonitorConfig"
+    },
+    {
+      "name": "spring.dubbo.application.monitor.password",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.MonitorConfig"
+    },
+    {
+      "name": "spring.dubbo.application.monitor.group",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.MonitorConfig"
+    },
+    {
+      "name": "spring.dubbo.application.monitor.version",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.MonitorConfig"
+    },
+    {
+      "name": "spring.dubbo.application.monitor.isDefault",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.alibaba.dubbo.config.MonitorConfig"
+    },
+    {
+      "name": "spring.dubbo.application.isDefault",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 是否为缺省.",
+      "sourceType": "com.alibaba.dubbo.config.ApplicationConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.address",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心 - 注册中心地址.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.username",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心 - 注册中心登录用户名.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.password",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心 - 注册中心登录密码.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.port",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心 - 注册中心缺省端口.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.protocol",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心 - 注册中心协议.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.transporter",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心 - 客户端实现.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.server",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.client",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.cluster",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.group",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.version",
+      "type": "java.lang.String",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.timeout",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 注册中心 - 注册中心请求超时时间(毫秒).",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.session",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 注册中心 - 注册中心会话超时时间(毫秒).",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.file",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 注册中心 - 动态注册中心列表存储文件.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.wait",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 注册中心 - 停止时等候完成通知时间.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.check",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 注册中心 - 启动时检查注册中心是否存在.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.dynamic",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 注册中心 - 在该注册中心上注册是动态的还是静态的服务.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.register",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 注册中心 - 在该注册中心上服务是否暴露.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.subscribe",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 注册中心 - 在该注册中心上服务是否引用.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.registry.isDefault",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 注册中心 - 是否为缺省.",
+      "sourceType": "com.alibaba.dubbo.config.RegistryConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.name",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 名称.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.host",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 服务IP地址(多网卡时使用).",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.port",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 服务协议 - 服务端口.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.contextpath",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 上下文路径.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.threadpool",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 线程池类型.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.threads",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 服务协议 - 线程池大小(固定大小).",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.iothreads",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 服务协议 - IO线程池大小(固定大小).",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.queues",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 服务协议 - 线程池队列大小.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.accepts",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 服务协议 - 最大接收连接数.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.codec",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 协议编码.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.serialization",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 序列化方式.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.charset",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 字符集.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.payload",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 服务协议 - 最大请求数据长度.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.buffer",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 服务协议 - 缓存区大小.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.heartbeat",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 服务协议 - 心跳间隔.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.accesslog",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 访问日志.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.transporter",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 网络传输方式.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.dispatcher",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 息线程模型派发方式.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.networker",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 对称网络组网方式.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.server",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 服务器端实现.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.client",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 客户端实现.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.telnet",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 支持的telnet命令，多个命令用逗号分隔.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.prompt",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - 命令行提示符.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.status",
+      "type": "java.lang.String",
+      "description": "dubbo配置 - 服务协议 - status检查.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.register",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 服务协议 - 是否注册.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.protocol.isDefault",
+      "type": "java.lang.Boolean",
+      "description": "dubbo配置 - 服务协议 - 是否为缺省.",
+      "sourceType": "com.alibaba.dubbo.config.ProtocolConfig"
+    },
+    {
+      "name": "spring.dubbo.provider.timeout",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 服务生产者 - 超时时间.",
+      "sourceType": "com.alibaba.dubbo.config.ProviderConfig"
+    },
+    {
+      "name": "spring.dubbo.provider.retries",
+      "type": "java.lang.Integer",
+      "description": "dubbo配置 - 服务生产者 - 重试次数.",
+      "sourceType": "com.alibaba.dubbo.config.ProviderConfig"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,50 @@
+server:
+  port: 10002
+logging:
+  config: classpath:logback-spring.xml
+  path: D:/logs/hope/service/biz
+  level: 
+        org.hopeframework.biz.service: debug,org.hopeframework.db.mapper:debug
+spring:
+  dubbo:
+    scan: org.hopeframework.biz.service
+    application:
+      name: hope-biz-service
+      owner: hope
+    registry:
+      address: zookeeper://114.55.30.32:2181
+    protocol:
+          name: dubbo
+          port: 20880
+    provider:
+      timeout: 60000
+      retries: -1
+  redis:
+    host: 114.55.30.32
+    port: 34587
+    password: tuodao!@#321
+    database: 1
+    pool:
+      max-wait: 50
+  datasource:
+      type: com.zaxxer.hikari.HikariDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://118.178.238.210:3306/td_business?autoCommit=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+      username: td_business
+      password: td_business!@#123456
+      hikari:
+        connection-test-query: SELECT 1
+        maximum-pool-size: 20
+        minimum-idle: 3
+        max-lifetime: 60000
+        validation-timeout: 60000
+  sleuth:
+    sampler:
+      percentage: 1
+
+  aop:
+    auto: true
+    proxy-target-class: true
+      
+mybatis:
+  mapper-locations: classpath*:xml/**/*Mapper.xml

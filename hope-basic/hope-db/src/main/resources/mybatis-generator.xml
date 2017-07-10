@@ -1,0 +1,237 @@
+ <!DOCTYPE generatorConfiguration 
+      PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+      "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+	<context id="generatorTables" targetRuntime="MyBatis3">
+	
+		<plugin type="com.tuodao.hechuan.mybatis.plugin.SerializableModelExamplePlugin"></plugin>
+		
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://118.178.238.210:3306/td_business?useUnicode=true&amp;characterEncoding=UTF-8"
+			userId="td_business" password="td_business!@#123456">
+		</jdbcConnection>
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		
+		<!--
+		<javaModelGenerator targetPackage="com.tuodao.cloud.manage.db.model.business"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="xml.business" targetProject="src/main/resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.tuodao.cloud.manage.db.mapper.business" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		 <table tableName="DEMO" domainObjectName="Demo"
+			enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+			<table tableName="bank_card" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="car_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="current_cost_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="c_overdue_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="CANCEL_OVERDUE_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="repay_type_parameter" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ARCHIVE_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="loan_user" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="USER_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="overdue_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="OVERDUE_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="overdue_relief_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="OVERDUE_RELIEF_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="renew_loan_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="RLOAN_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="repay_history" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="HISTORY_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="repay_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="REPAY_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="repay_plan" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="REPAY_PLAN_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="settle_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="SETTLE_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="store_products" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="trailer_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="TRAILER_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="tuodao_products" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="PRODUCT_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="tuodao_store" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="STORE_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="two_arrival_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="TWO_ARRIVAL_ID" sqlStatement="Mysql" identity="true" />
+			</table> 
+			<table tableName="repay_basic_pat" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="repay_type_dic" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="refund_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="REFUND_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="addit_borrow_fee" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ADDID_FEE_ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="vehicle_brand_dict" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+			</table>
+			<table tableName="loan_audit_info" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+			</table>-->
+		
+		<!--
+		<javaModelGenerator targetPackage="com.tuodao.cloud.manage.db.model.base"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="xml.base" targetProject="src/main/resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.tuodao.cloud.manage.db.mapper.base" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		<table tableName="dictionary" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="banks" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="areas" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="system_basic_data" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="user_operate_log" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="provinces" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="cities" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		
+		
+		<javaModelGenerator targetPackage="com.tuodao.cloud.manage.db.model.user"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="xml.user" targetProject="src/main/resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.tuodao.cloud.manage.db.mapper.user" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		<table tableName="role_permission" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="system_permission" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="PERMISSION_ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="system_role" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="ROLE_ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="system_user" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="SYSTEM_ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="user_role" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true">
+				<property name="useActualColumnNames" value="false" />
+				<generatedKey column="SYSTEM_ID" sqlStatement="Mysql" identity="true" />
+		</table>
+		-->
+		
+		<javaModelGenerator targetPackage="org.hopeframework.db.model.demo"
+			targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="xml.demo" targetProject="src/main/resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="org.hopeframework.db.mapper.demo" targetProject="src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+		<table tableName="DEMO" enableCountByExample="true" enableSelectByExample="true" enableUpdateByExample="true" enableDeleteByExample="true"/>
+	</context>
+
+</generatorConfiguration>

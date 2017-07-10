@@ -1,0 +1,8 @@
+# contextinit
+org.springframework.context.ApplicationContextInitializer=\
+org.hopeframework.dubbo.config.DubboConfigurationApplicationContextInitializer
+
+# autoconfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.hopeframework.dubbo.config.DubboAutoConfiguration,\
+org.hopeframework.dubbo.trace.TraceDubboAutoConfiguration

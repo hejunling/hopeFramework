@@ -1,0 +1,4 @@
+dubboconsumerstatics=org.hopeframework.dubbo.listener.ConsumerInvokeStaticsFilter
+dubboproviderstatics=org.hopeframework.dubbo.listener.ProviderInvokeStaticsFilter
+spanConsumer=org.hopeframework.dubbo.trace.ConsumerSpanFilter
+spanProvider=org.hopeframework.dubbo.trace.ProviderSpanFilter
